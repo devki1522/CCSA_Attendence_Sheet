@@ -1,0 +1,9 @@
+.git
+.vs
+.vscode
+build
+out
+vcpkg_installed
+database/*.db
+database/*.sqlite
+database/*.sqlite3

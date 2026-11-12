@@ -1,0 +1,8 @@
+services:
+  cybercheck:
+    build: .
+    ports:
+      - "27000:27000"
+    restart: unless-stopped
+    volumes:
+      - ./database:/app/database

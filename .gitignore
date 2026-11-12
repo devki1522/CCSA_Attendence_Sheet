@@ -1,0 +1,36 @@
+# Visual Studio / VS Code
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.suo
+*.user
+
+# CMake & Build Artifacts
+build/
+out/
+CMakeSettings.json
+CMakeUserPresets.json
+
+# Compilers & Object Files
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.dll
+
+# vcpkg
+vcpkg_installed/
+
+# SQLite Database (don't commit live attendance data)
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+!database/.gitkeep
+
+# OS generated
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
