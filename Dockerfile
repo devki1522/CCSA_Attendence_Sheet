@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && useradd --system --create-home --home-dir /app appuser
 
 WORKDIR /app
+COPY public ./public
 COPY --from=build /app/build/CCSA_Attendence_Sheet ./CCSA_Attendence_Sheet
 RUN mkdir -p /app/database && chown appuser:appuser /app/database
 

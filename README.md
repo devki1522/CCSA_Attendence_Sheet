@@ -52,7 +52,6 @@ The first run builds the Linux image and starts the service on port `27000`.
 Open <http://localhost:27000> to check that it is running. Stop it with
 `Ctrl+C`; use `docker compose down` to remove the stopped container.
 
-The image compiles the C++ service inside Linux, so a Windows `g++` install is
-not needed. Crow's Asio headers and SQLite development files are installed in
+Crow's Asio headers and SQLite development files are installed in
 the build stage. The `database` folder is mounted for persistent database
 files when database support is added to the service.
